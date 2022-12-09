@@ -36,7 +36,7 @@ const Tip = (props) => {
   return (
     <TipContainer x={props.x} y={props.y} key={props.number}>
       <Circle bgcolor={props.bgcolor} onClick={props.handleClick}>
-        <img src={props.pic} />
+        <img src={props.pic} alt="default" />
         <p>TIP {props.number}</p>
       </Circle>
       <p onClick={props.handleClick}>{props.text}</p>
