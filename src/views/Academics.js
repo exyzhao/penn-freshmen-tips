@@ -25,14 +25,14 @@ const tips = [
   },
   {
     number: 3,
-    text: "Upperclassmen are super helpful for figuring out your future career/life goals — ask them to coffee chat.",
+    text: "Juniors and seniors are super helpful for figuring out your future career/life goals — ask them to coffee chat.",
     bgcolor: "#C4F8B1",
     x: 300,
     y: 200
   },
   {
     number: 4,
-    text: "Go out of your comfort zone, take classes that aren’t mainstream/super popular.",
+    text: "Go out of your comfort zone, take classes that aren’t mainstream or super popular.",
     bgcolor: "#FFAF3A",
     x: 40,
     y: 550
