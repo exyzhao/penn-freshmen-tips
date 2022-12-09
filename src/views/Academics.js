@@ -1,5 +1,6 @@
 import { useState } from "react"
 import styled from "styled-components"
+import book from "../book.svg"
 
 import Tip from "../components/Tip"
 
@@ -24,28 +25,28 @@ const tips = [
   },
   {
     number: 3,
-    text: "eat your veggie",
+    text: "Upperclassmen are super helpful for figuring out your future career/life goals — ask them to coffee chat.",
     bgcolor: "#C4F8B1",
     x: 300,
     y: 200
   },
   {
     number: 4,
-    text: "eat your veg",
+    text: "Go out of your comfort zone, take classes that aren’t mainstream/super popular.",
     bgcolor: "#FFAF3A",
     x: 40,
     y: 550
   },
   {
     number: 5,
-    text: "eat your ve",
+    text: "Take classes that you are interested early on - expand beyond courses in your major.",
     bgcolor: "#76A2C6",
     x: 500,
     y: 110
   },
   {
     number: 6,
-    text: "eat your v",
+    text: "Ask your professors to get coffee, and go to office hours even if you don't have the courage to ask questions.",
     bgcolor: "#D4B1F8",
     x: 550,
     y: 350
@@ -71,7 +72,7 @@ const Academics = () => {
       <Tips zoomed={zoomed} x={x} y={y}>
 
         {tips.map(tip => (
-          <Tip number={tip.number} text={tip.text} bgcolor={tip.bgcolor} x={tip.x} y={tip.y} key={tip.number}
+          <Tip number={tip.number} text={tip.text} bgcolor={tip.bgcolor} x={tip.x} y={tip.y} key={tip.number} pic={book}
             handleClick={() => {
               setZoomed(!zoomed)
               // -scaleFactor * x places component @ left = 0

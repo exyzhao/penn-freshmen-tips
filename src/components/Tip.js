@@ -1,7 +1,5 @@
 import styled from "styled-components"
 
-import book from "../book.svg"
-
 const TipContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -38,7 +36,7 @@ const Tip = (props) => {
   return (
     <TipContainer x={props.x} y={props.y} key={props.number}>
       <Circle bgcolor={props.bgcolor} onClick={props.handleClick}>
-        <img src={book} />
+        <img src={props.pic} />
         <p>TIP {props.number}</p>
       </Circle>
       <p onClick={props.handleClick}>{props.text}</p>
