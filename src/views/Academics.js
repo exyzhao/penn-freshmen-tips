@@ -3,7 +3,10 @@ import styled from "styled-components"
 
 import Tip from "../components/Tip"
 
+// scaleFactor adjusts how large the component is when clicked
 const scaleFactor = 2.5
+
+// x, y in px
 const tips = [
   {
     number: 1,
@@ -48,10 +51,6 @@ const tips = [
     y: 350
   },
 ]
-
-const TipsWrapper = styled.div`
-  position: relative;
-`
 
 const Tips = styled.div`
   position: absolute;
